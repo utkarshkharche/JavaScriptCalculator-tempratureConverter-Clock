@@ -1,0 +1,57 @@
+<html>
+<script>
+function openWin() 
+{
+    window.open("ctof.html");
+}
+function openwin() 
+{
+    window.open("ftoc.html");
+}
+
+MyBanners=new Array('banner1.jpg','banner2.jpg','banner3.jpg','banner4.jpg')
+banner=0
+function ShowBanners()
+{ 
+	if (document.images)
+	{ 
+		banner++
+		if (banner==MyBanners.length) 
+		{
+		banner=0
+		}
+		document.ChangeBanner.src=MyBanners[banner]
+		setTimeout("ShowBanners()",1000)
+	}
+} 
+</script>
+<body align="center" onload="ShowBanners()"><br><br><br><br><br><br><br><br><br><br><br>
+<h1 align="center"><p><font face="Sylfaen" color="#02437c"><u>Temprature Converter<u></h1></p></font>
+<br>
+<input type="button" value="*C To *F"onClick="openWin()" class="btn google">
+<br><br>
+<img align="center" src="banner1.jpg" width="600" height="12" name="ChangeBanner" /><br><br>
+<input type="button" value="*F To *C"onClick="openwin()" class="btn google">
+
+</body>
+<style>
+.btn {
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.google {
+  border-color: #00b3b3;
+  color:  #00b3b3;
+}
+.google:hover {
+  background-color: #00b3b3;
+  color: white;
+}	
+body{
+		background-color:#d6d6d6;
+}
+</html>

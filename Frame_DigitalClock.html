@@ -1,0 +1,33 @@
+<html>
+<script>
+function openWin() 
+{
+    window.open("DigitalClock.html");
+}
+function bigImg(x) 
+{
+    x.style.height = "84px";
+    x.style.width = "84px";
+}
+function normalImg(x) 
+{
+    x.style.height = "80px";
+    x.style.width = "80px";
+}
+</script>
+<body align="center">
+<br>
+<h1 align="center-left"><p><font face="Gabriola" color="white">Digital Clock</h1></p></font>
+<br><br><br>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="clock.png" alt="Smiley" width="80" height="80" onclick="openWin()">
+<br>
+<style>
+body{
+	background-image:url("frame background.png");
+	background-repeat: no-repeat;
+	background-position:center;
+	backgroung-size: cover;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html>
+<head>
+<script>
+function openWin() 
+{
+    window.open("frameset.html");
+}
+</script>
+</head>
+<body align="center" background="banner3.jpg"><br><br><br><br><br><br>
+<label><h1><font face="Roboto" color="#150019"><u>Calculator</u></h1></label>
+
+<div class="formstyle">
+<form name="forms">
+<input type="text" name="answer" size="35">
+<br><br>
+<input type="button"  value=" 1 " onclick="forms.answer.value += '1' " class="button" > 
+<input type="button"  value=" 2 " onclick="forms.answer.value += '2' " class="button">
+<input type="button"  value=" 3 " onclick="forms.answer.value += '3' " class="button">
+<input type="button"  value=" C " onclick="forms.answer.value  = ' ' " class="operators">
+<br><br>
+<input type="button"  value=" 4 " onclick="forms.answer.value += '4' " class="button"> 
+<input type="button"  value=" 5 " onclick="forms.answer.value += '5' " class="button">
+<input type="button"  value=" 6 " onclick="forms.answer.value += '6' " class="button">
+<input type="button"  value=" + " onclick="forms.answer.value += '+' "class="operators">
+<br><br>
+<input type="button"  value=" 7 " onclick="forms.answer.value += '7' " class="button"> 
+<input type="button"  value=" 8 " onclick="forms.answer.value += '8' " class="button">
+<input type="button"  value=" 9 " onclick="forms.answer.value += '9' " class="button">
+<input type="button"  value=" - " onclick="forms.answer.value += '-' "class="operators">
+<br><br>
+<input type="button"  value=" 0 " onclick="forms.answer.value += '0' " class="button"> 
+<input type="button"  value=" * " onclick="forms.answer.value += '*' "class="operators">
+<input type="button"  value=" / " onclick="forms.answer.value += '/' "class="operators">
+<input type="button"  value=" = " onclick="forms.answer.value  = eval(forms.answer.value)"class="operators">
+
+</form>
+</div>
+<form align="left">
+<label><h3><font face="Roboto" color="#150019">Go Back To:</h3></label>
+<input type="button" value="App Menu"onClick="openWin()" class="goback"><br>
+</form>
+
+ </body>
+ <style>
+ input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.goback {
+	padding: 5px 10px;
+  font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.goback:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #330033;
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #c832ff}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.operators {
+   display: inline-block;
+  padding: 5px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #330033;
+  background-color: #bfbfbf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.operators:hover {background-color:#511d47}
+.operators:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	border: 3px solid #555;
+}
+
+
+</style>
+</html>
+ 
+ 

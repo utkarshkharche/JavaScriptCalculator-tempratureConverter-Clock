@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Digital Clock</title>
+		</style>
+	</head>
+	<body align="center"><br><br><br><br><br><br><br><br><br><br><br><br>
+	<h2 align="center"><p><font face="Tahoma" color="#193f38"><u>Digital Clock</u></h2></p></font>
+		 <font face="Segoe UI" color="#1a3d07"><h1 id="MyClockDisplay" class="clock" face="Sylfaen" color="white"></h1></font>
+		<script type="text/javascript">
+			function showTime()
+			{
+				var date = new Date();
+				var h = date.getHours(); 
+				var m = date.getMinutes(); 
+				var s = date.getSeconds(); 
+				var session = "AM";
+				if(h >= 12)
+				{
+					h = h - 12;
+					session = "PM";
+				}
+				if(h == 0)
+				{
+					h = 12;
+				}
+				h =  (h < 10) ? "0" + h : h;
+				m =  (m < 10) ? "0" + m : m;
+				s =  (s < 10) ? "0" + s : s;
+				var time = h + ":" + m + ":" + s + " " + session; 
+				document.getElementById("MyClockDisplay").textContent = time; 
+				//textContent returns the text content of all elements
+				setTimeout(showTime, 500);
+			}
+			showTime();
+function openWin() 
+{
+    window.open("frameset.html");
+}
+		</script>
+<form align="left"><br><br><br><br><br>
+<label><h3><font face="Roboto" color="#150019">Go Back To:</h3></label>
+<input type="button" value="app Menu"onClick="openWin()" class="gobackbutton"><br>
+</form>
+		<style>
+body{
+		background-color:#a4f2e3;
+}
+.gobackbutton {
+	padding: 5px 10px;
+  font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.gobackbutton:hover {
+    background-color: #555555;
+    color: white;
+}
+</style>
+	</body>
+</html>

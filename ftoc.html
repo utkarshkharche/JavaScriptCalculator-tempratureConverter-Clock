@@ -1,0 +1,64 @@
+<html>
+<body align="center">
+<p><br><br><br><br><br><br><br><br><br><br><br>
+<h1 align="center"><p><font face="Franklin Gothic" color="#4f0000">Fahrenheit -> Celcius</h1></p></font>
+<input type="text" placeholder="Fahrenheit" oninput="FahrenheitToCelcius(this.value)">
+</p>
+<h3 align="center"><p><font face="Franklin Gothic" color="#004f3b"><u>Celcius</u>: <span id="outputCelcius"></span> *C</h3></p></font>
+<script>
+function FahrenheitToCelcius(inputNumber) 
+{
+  inputNumber = parseFloat(inputNumber);
+  document.getElementById("outputCelcius").textContent=(inputNumber-32)/1.8;
+}
+
+function openWin() 
+{
+    window.open("frameset.html");
+}
+
+function openWin1() 
+{
+    window.open("Temprature Converter.html");
+}
+</script>
+<form align="left"><br><br><br>
+<label><h3><font face="Roboto" color="#150019">Go Back To App Menu:</h3></label>
+<input type="button" value="app Menu"onClick="openWin()" class="gobackbutton">
+<input type="button" value="Temprature Converter"onClick="openWin1()" class="gobackbutton"><br>
+</form>
+</body>
+<style> 
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+body{
+		background-color:#8ecaff;
+}
+
+.gobackbutton {
+	padding: 5px 10px;
+  font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.gobackbutton:hover {
+    background-color: #555555;
+    color: white;
+}
+</style>
+
+
+</html>
